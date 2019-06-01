@@ -1,0 +1,98 @@
+/*!!
+Theme Name: MasterMind
+Author: MasterMind
+Version: 0.0.3
+*/
+
+// Config
+var_display_size_pc = 1600px
+var_display_size_tab = 780px
+var_display_size_sp = 781px
+
+var_container_width = 1024px
+var_container_width_s = 950px
+var_container_width_xs = 750px
+
+var_body_bgc = #000
+var_text_fontc = #FFF
+var_link_fontc = #FFF
+var_link_hover_fontc = #FFF
+
+var_hamburger_bgc = #FFF
+var_hamburger_height = 30px
+
+// Include
+/**
+* Functions
+*/
+@import "ce/stylus/functions/functions.styl"
+
+/**
+* Common
+*/
+@import "ce/stylus/stylus/common/reset.styl"
+
+/**
+* Layout
+*/
+@import "ce/stylus/stylus/layout/container.styl"
+@import "ce/stylus/stylus/layout/grid.styl"
+@import "ce/stylus/stylus/layout/layout-sidebar.styl"
+
+/**
+* Element
+*/
+@import "ce/stylus/stylus/element/responsive.styl"
+@import "ce/stylus/stylus/element/text.styl"
+@import "ce/stylus/stylus/element/form.styl"
+@import "ce/stylus/stylus/element/hamburger.styl"
+
+
+
+vh_border = 1px
+vh_content = 40px
+vh_margin = 12px
+vh_all =  vh_margin + vh_margin + vh_content + vh_border
+
+@import "stylus/common.styl"
+@import "stylus/navbar.styl"
+@import "stylus/news.styl"
+@import "stylus/shoplist.styl"
+@import "stylus/collection.styl"
+@import "stylus/collaboration.styl"
+
+.modal-trigger
+  cursor pointer
+.modal-window
+  display none
+  width 100%
+  height 100vh
+  position fixed
+  top 0
+  left 0
+  z-index 100
+  .modal-window-contents
+    width 100%
+    height 100vh
+    z-index 101
+    position fixed
+    top 0
+    left 0
+    & > .inner-1
+      width 100%
+      height 100vh
+      vp(display,flex)
+      vp(flex-direction,column)
+      vp(flex-wrap,wrap)
+      vp(justify-content,center)
+      vp(align-items,center)
+      & > .inner-2
+        background-color #572020
+  .modal-window-bg
+    z-index 100
+    width 100%
+    height 100vh
+    background-color alpha(#000,0.9)
+    position fixed
+    top 0
+    left 0

@@ -1,0 +1,49 @@
+vp(property,value)
+  if property == display && value == flex
+    display: -ms-flexbox
+    display: -ms-flex
+    display: -webkit-box
+    display: -webkit-flex
+    display: -moz-flex
+    display: -o-flex
+  else if property == justify-content && value == space-between
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    -webkit-{property}:value;
+    -moz-{property}:value;
+    -ms-{property}:value;
+    -o-{property}:value;
+    {property}:value;
+  else if property == align-items && value == center
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    -webkit-{property}:value;
+    -moz-{property}:value;
+    -ms-{property}:value;
+    -o-{property}:value;
+    {property}:value;
+  else
+    -webkit-{property}:value;
+    -moz-{property}:value;
+    -ms-{property}:value;
+    -o-{property}:value;
+    {property}:value;
+
+boxborderbox()
+  vp(box-sizing,border-box)
+
+nomargin()
+  margin 0
+  padding 0
+
+ff_mincho()
+  Georgia,"游明朝","Yu Mincho","YuMincho","Hiragino Mincho ProN","HGS明朝E","メイリオ","Meiryo",serif
+
+ff_gothic()
+  -apple-system,"BlinkMacSystemFont","Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif
+
+// -- Positon -------------------------------------------------------------------
+position_absolute(elem_content)
+  position relative
+  {elem_content}
+    position absolute

@@ -1,0 +1,40 @@
+bgi()
+  display block
+  background-size cover
+  background-repeat 1
+  background-position center center
+
+grd_linear(direction,color1,color2)
+  if direction == "vertical"
+    var_direction_webkit_gra1 = left top
+    var_direction_webkit_gra2 = left bottom
+    var_direction_webkit_linear_gra = top
+    var_direction_linear_gra = to bottom
+    var_start = 0%
+    var_end = 100%
+  else if direction == "horizontal"
+    var_direction_webkit_gra1 = left
+    var_direction_webkit_gra2 = right
+    var_direction_webkit_linear_gra = left
+    var_direction_linear_gra = to right
+    var_start = 0%
+    var_end = 100%
+  else if direction == "horizontal_start_position_20"
+    var_direction_webkit_gra1 = left
+    var_direction_webkit_gra2 = right
+    var_direction_webkit_linear_gra = left
+    var_direction_linear_gra = to right
+    var_start = 20%
+    var_end = 100%
+  else if direction == "horizontal_end_position_20"
+    var_direction_webkit_gra1 = left
+    var_direction_webkit_gra2 = right
+    var_direction_webkit_linear_gra = left
+    var_direction_linear_gra = to right
+    var_start = 0%
+    var_end = 80%
+  background color1
+  background -webkit-gradient(linear, var_direction_webkit_gra1, var_direction_webkit_gra2, color-stop(var_start ), color-stop(var_end, color2))
+  background -webkit-linear-gradient(var_direction_webkit_linear_gra, color1 var_start, color2 var_end)
+  background -moz-linear-gradient(var_direction_webkit_linear_gra, color1 var_start, color2 var_end)
+  background linear-gradient(var_direction_linear_gra, color1 var_start, color2 var_end)

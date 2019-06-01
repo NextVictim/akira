@@ -1,0 +1,104 @@
+a.button,button.button
+  display inline-block
+  color var_color_default_opp
+  background-color var_color_default
+  border solid 1px darken(var_color_default,5%)
+  font-size 15px
+  padding 12px 12px
+  min-width 120px
+  text-align center
+  vp(border-radius,5px)
+  cursor pointer
+  text-decoration none
+  line-height 100%
+  &:hover
+    text-decoration none
+    color darken(var_color_default_opp,3%)
+    background-color darken(var_color_default,3%)
+
+  &.button-m
+    font-size 15px
+    padding 12px 12px
+    min-width 120px
+    vp(border-radius,5px)
+  &.button-s
+    font-size 13px
+    padding 8px 8px
+    min-width 100px
+    vp(border-radius,5px)
+  &.button-xs
+    font-size 10px
+    padding 4px 4px
+    min-width 60px
+    vp(border-radius,5px)
+  &.button-l
+    font-size 17px
+    padding 18px 18px
+    min-width 160px
+    vp(border-radius,5px)
+  &.button-xl
+    font-size 20px
+    padding 20px 20px
+    min-width 180px
+    vp(border-radius,5px)
+
+  &.button-default
+    background-color var_color_default
+    border solid 1px darken(var_color_default,5%)
+    &:hover
+      color darken(var_color_default_opp,3%)
+      background-color darken(var_color_default,3%)
+
+  &.button-primary
+    background-color var_color_primary
+    border solid 1px darken(var_color_primary,5%)
+    color var_color_primary_opp
+    &:hover
+      border solid 1px darken(var_color_primary,5%)
+      background-color darken(var_color_primary,3%)
+      color var_color_primary_opp
+
+  &.button-success
+    background-color var_color_success
+    border solid 1px darken(var_color_success,5%)
+    color var_color_success_opp
+    &:hover
+      border solid 1px darken(var_color_success,5%)
+      background-color darken(var_color_success,3%)
+      color var_color_success_opp
+
+  &.button-info
+    background-color var_color_info
+    border solid 1px darken(var_color_info,5%)
+    color var_color_info_opp
+    &:hover
+      border solid 1px darken(var_color_info,5%)
+      background-color darken(var_color_info,3%)
+      color var_color_info_opp
+
+  &.button-warning
+    background-color var_color_warning
+    border solid 1px darken(var_color_warning,5%)
+    color var_color_warning_opp
+    &:hover
+      border solid 1px darken(var_color_warning,5%)
+      background-color darken(var_color_warning,3%)
+      color var_color_warning_opp
+
+  &.button-danger
+    background-color var_color_danger
+    border solid 1px darken(var_color_danger,5%)
+    color var_color_danger_opp
+    &:hover
+      border solid 1px darken(var_color_danger,5%)
+      background-color darken(var_color_danger,3%)
+      color var_color_danger_opp
+
+.buttons
+  vp(display,flex)
+  vp(flex-direction,row)
+  vp(flex-wrap,wrap)
+  & > li
+    margin-right 10px
+    &:last-child
+      margin-right 0

@@ -1,0 +1,47 @@
+flexbox()
+  vp(display,flex)
+  vp(flex-direction,row)
+
+flexbox_column()
+  vp(display,flex)
+  vp(flex-direction,column)
+
+flexbox_content(column,elem_content)
+  vp(display,flex)
+  vp(flex-direction,row)
+  vp(justify-content,space-between)
+  if column == 4
+    {elem_content}
+      width 24%
+      margin-bottom 25px
+      +disp_size_sp()
+        width 49%
+        margin-bottom 25px
+  else if column == 4
+    {elem_content}
+      width 58.5%
+      margin-bottom 25px
+      +disp_size_sp()
+        width 49%
+        margin-bottom 25px
+  else if column == 3
+    {elem_content}
+      width 32.333333333%
+      margin-bottom 25px
+      +disp_size_sp()
+        width 100%
+        margin-bottom 25px
+  else if column == 5
+    {elem_content}
+      width 19%
+      margin-bottom 25px
+      +disp_size_sp()
+        width 100%
+        margin-bottom 25px
+  else if column == 6
+    {elem_content}
+      width 15.6666666%
+      margin-bottom 25px
+      +disp_size_sp()
+        width 32%
+        margin-bottom 25px

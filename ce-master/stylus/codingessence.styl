@@ -1,0 +1,102 @@
+/*!!
+codingESSENCE Original Functions
+*/
+
+/**
+* Config
+*/
+var_display_size_pc = 1100px
+var_display_size_tab = 720px
+var_display_size_sp = 480px
+var_container_width = 1100px
+
+/**
+* Functions
+*/
+@import "functions/functions.styl"
+
+a
+  color #000
+  text-decoration none
+  &:hover
+    text-decoration underline
+
+body.codingessence-layout
+  width 100%
+  vp(display,flex)
+  vp(flex-direction,row)
+  vp(flex-wrap,nowrap)
+  & > main
+    width auto
+    order 2
+    padding 20px
+    width 85%
+    & > header
+      margin-bottom 20px
+      h1
+        font-size 24px
+        font-weight bold
+    section
+      margin-bottom 20px
+    section.text
+      h2
+        font-size 18px
+        font-weight bold
+      p
+        font-size 15px
+        line-height 160%
+    section.example
+      & > .view
+        background-color #fff
+        border solid 3px #e9e9e9
+        padding 10px
+        position relative
+        &::before
+          position absolute
+          content "VIEW"
+          left 0
+          top 0
+          font-size 10px
+          padding 3px
+          background-color #e9e9e9
+          color #bdbdbd
+          z-index 1
+          transform: scale(0.6);
+          transform-origin: left top; 
+      & > .comment
+        margin-top 5px
+        font-size 12px
+        color #6e6e6e
+    nav.back
+      text-align center
+      margin-top 20px
+      & > a
+        display inline-block
+        background-color #6b6b6b
+        color #FFF
+        padding 10px 20px
+        font-size 15px
+        vp(border-radius,5px)
+  & > aside
+    width 15%
+    padding 20px
+    background-color #f6f6f6
+    order 1
+    min-height 100vh
+    h1
+      margin-bottom 15px
+      a
+        font-size 18px
+        font-weight bold
+        color #000
+    .group-sidebar
+      margin-bottom 15px
+      dl
+        dt
+          font-size 15px
+          font-weight bold
+        dd
+          font-size 14px
+          padding-left 7px
+          a
+            color #000

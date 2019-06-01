@@ -1,0 +1,87 @@
+.mm-navbar
+  width 100%
+  height auto
+  position fixed
+  top 0
+  left 0
+  & > .mm-navbar-top
+    width 100%
+    border-bottom solid vh_border #b59c77
+    padding-top vh_margin
+    padding-bottom vh_margin + vh_border
+    height vh_all
+    background-color #000
+    .container
+      height vh_content
+      vp(display,flex)
+      vp(flex-direction,row)
+      vp(flex-wrap,wrap)
+      vp(justify-content,space-between)
+      vp(align-items,center)
+      .menu-l
+        width 40px
+        height vh_content
+        display block
+        order 1
+        vp(display,flex)
+        vp(flex-direction,column)
+        vp(flex-wrap,wrap)
+        vp(justify-content,center)
+        vp(align-items,center)
+      .logo
+        width auto
+        height vh_content
+        display block
+        order 2
+        h1
+          width auto
+          height vh_content
+          padding 0
+          margin 0
+          img
+            width auto
+            height vh_content
+      .menu-r
+        width 40px
+        height vh_content
+        display block
+        order 3
+        vp(display,flex)
+        vp(flex-direction,column)
+        vp(flex-wrap,wrap)
+        vp(justify-content,center)
+        vp(align-items,center)
+  & > .mm-navbar-middle
+    width 100%
+    border-bottom solid vh_border #b59c77
+    display none
+    background-color #000
+    & > .container
+      & > ul
+        padding-top 20px
+        padding-bottom 20px
+        & > li
+          & > a
+            display inline-block
+            padding-top 10px
+            padding-bottom 10px
+            img
+              height 25px
+              width auto
+  & > .mm-navbar-bottom
+    width 100%
+    background-repeat repeat-x
+    background-size 100px 100%
+    background-repeat 1
+    background-position center center
+    height 100px
+    vp(display,flex)
+    vp(flex-direction,column)
+    vp(flex-wrap,wrap)
+    vp(justify-content,center)
+    vp(align-items,center)
+    & > .title
+      height 40px
+      margin-bottom 20px
+      img
+        height 40px

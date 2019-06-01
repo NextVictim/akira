@@ -1,0 +1,67 @@
+*
+  vp(box-sizing,border-box)
+
+body
+  margin 0
+  padding 0
+  color var_text_fontc
+  background-color var_body_bgc
+  position relative
+
+h1,h2,h3,h4,h5,h6
+  font-weight normal
+
+ul,dl,ol,p,h1,h2,h3,h4,h5,h6
+  margin 0
+  padding 0
+
+dd,dt
+  margin 0
+  padding 0
+
+button,intpu[type="submit"],input[type="text"],input[type="number"],input[type="password"],input[type="email"],textarea,select
+  &:focus
+    outline 0
+
+ul,dl,ol
+  list-style none
+
+img
+  max-width 100%
+
+a
+  text-decoration none
+  color var_link_fontc
+  &:hover
+    color var_link_hover_fontc
+
+select
+  outlinenone
+  text-indent 0.01px
+  text-overflow ''
+  background none transparent
+  vertical-align middle
+  font-size inherit
+  color inherit
+  -webkit-appearance button
+  -moz-appearance button
+  appearance button
+  background-color #fff
+  font-size 1em
+  padding 5px 10px
+  border 1px solid alpha(#000,0.1)
+  boxborderbox()
+  max-width 100%
+  option
+    background-color #fff
+    color #333
+    padding 10px
+  &::-ms-expand
+    display none
+  &:-moz-focusring
+    color transparent
+    text-shadow 0 0 0 #828c9a
+
+figure
+  margin 0
+  padding 0

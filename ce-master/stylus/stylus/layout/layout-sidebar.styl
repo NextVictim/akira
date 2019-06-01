@@ -1,0 +1,53 @@
+.layouts
+  vp(display,flex)
+  vp(flex-direction,row)
+  vp(flex-wrap,wrap)
+  vp(justify-content,space-between)
+  +disp_size_sp()
+    vp(display,flex)
+    vp(flex-direction,column)
+    vp(flex-wrap,wrap)
+    vp(justify-content,flex-start)
+  & > .layout-contents
+    width 73.5%
+    order 1
+    display block
+    +disp_size_sp()
+      width 100%
+      order 1
+  & > .layout-sidebar
+    width 25%
+    order 2
+    display block
+    +disp_size_sp()
+      width 100%
+      order 2
+
+  // Sidebar Left
+  &.sidebar-left
+    & > .layout-contents
+      order 2
+      +disp_size_sp()
+        order 1
+    & > .layout-sidebar
+      order 1
+      +disp_size_sp()
+        order 2
+
+  // Sidebar Right
+  &.sidebar-right
+    & > .layout-contents
+      order 1
+      +disp_size_sp()
+        order 1
+    & > .layout-sidebar
+      order 2
+      +disp_size_sp()
+        order 2
+
+  // Sidebar NoView
+  &.sidebar-sp-noview
+    & > .layout-sidebar
+      display block
+      +disp_size_sp()
+        display none

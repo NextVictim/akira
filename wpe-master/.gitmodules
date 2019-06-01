@@ -1,0 +1,3 @@
+[submodule "essence_front_admin"]
+	path = essence_front_admin
+	url = https://ryo0702@github.com/ryo0702/essence_front_admin.git

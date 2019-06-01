@@ -1,0 +1,24 @@
+.mm-contents-news
+  article
+    margin-bottom 50px
+    &:last-child
+      margin-bottom 0
+    & > header,& > .content,& > .photo
+      margin-bottom 25px
+      &:last-child
+        margin-bottom 0
+    & > header
+      vp(display,flex)
+      vp(flex-direction,column)
+      vp(flex-wrap,wrap)
+      vp(justify-content,flex-start)
+      h2
+        order 2
+        font-weight bold
+        font-size 25px
+      .date
+        order 1
+        font-size 15px
+    & > .photo
+      img
+        width 100%
